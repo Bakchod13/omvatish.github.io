@@ -1,345 +1,428 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>YOUR NAME — IT · Photography · Streaming</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Om Vatish | IT • Photography • Streaming</title>
+  <meta name="description" content="Portfolio of Om Vatish — Networking student, IT projects, photography, videography, and streaming." />
+  <meta property="og:title" content="Om Vatish | Portfolio" />
+  <meta property="og:description" content="IT + Photography + Streaming portfolio. Projects, gallery, and blog." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ─── CURSOR ─────────────────────────────────────────── -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursor-trail"></div>
+  <!-- Top progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-  <!-- ─── NAV ────────────────────────────────────────────── -->
-  <nav class="nav" id="nav">
-    <a href="#home" class="nav-logo">YN<span class="dot">.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="nav-toggle" aria-label="toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Om Vatish</span>
+      </a>
 
-  <!-- ─── HERO ────────────────────────────────────────────── -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-      <div class="glow glow-1"></div>
-      <div class="glow glow-2"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal">Hello, I'm</p>
-      <h1 class="hero-name reveal">
-        <span class="line">YOUR</span>
-        <span class="line accent-stroke">NAME.</span>
-      </h1>
-      <div class="hero-tags reveal">
-        <span class="tag">🌐 Networking Student</span>
-        <span class="tag">📷 Photographer</span>
-        <span class="tag">🎮 Gamer</span>
-        <span class="tag">🎥 Content Creator</span>
-      </div>
-      <p class="hero-sub reveal">3rd Year IT · Visual Storyteller · Digital Native</p>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn-primary">See My Work</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
 
-  <!-- ─── ABOUT ───────────────────────────────────────────── -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-wrap reveal-left">
-          <div class="about-img-placeholder">
-            <!-- Replace with: <img src="images/your-photo.jpg" alt="Your Name"> -->
-            <div class="img-placeholder-inner">
-              <span>YOUR<br>PHOTO</span>
-            </div>
-          </div>
-          <div class="about-img-deco"></div>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">IT</a>
+          <a href="#gallery">Photo/Video</a>
+          <a href="#streaming">Streaming</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contact" class="btn btn-sm">Contact</a>
         </div>
-        <div class="about-text reveal-right">
-          <p class="section-label">/ About Me</p>
-          <h2>Tech meets <em>creativity</em>.</h2>
-          <p>
-            I'm a 3rd-year <strong>Networking &amp; IT student</strong> who lives at the intersection of technology and visual art.
-            When I'm not deep in subnets and protocols, I'm behind a lens capturing moments, editing videos, or streaming my gaming sessions.
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Networking Student • IT Support • Creator</span>
+          </div>
+
+          <h1 class="headline">
+            I build reliable systems <span class="muted">and</span> cinematic content.
+          </h1>
+
+          <p class="subhead">
+            Third-year networking student blending <strong>IT</strong>, <strong>photography</strong>,
+            <strong>videography</strong>, and <strong>streaming</strong>. Clean work, documented projects,
+            and a little gamer energy.
           </p>
-          <p>
-            I believe the best digital experiences come from people who understand both the <strong>infrastructure</strong> that powers the web and the <strong>creative vision</strong> that makes it worth visiting.
-          </p>
-          <div class="about-stats">
-            <div class="stat"><span class="stat-num">3rd</span><span class="stat-label">Year IT</span></div>
-            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Shots Fired</span></div>
-            <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Online</span></div>
+
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See IT projects</a>
+            <a class="btn btn-ghost" href="#gallery">View gallery</a>
+          </div>
+
+          <div class="quick-stats" aria-label="Highlights">
+            <div class="stat">
+              <div class="stat-num">IT</div>
+              <div class="stat-label">Networking • Linux • Support</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Media</div>
+              <div class="stat-label">Photo • Video • Edits</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Live</div>
+              <div class="stat-label">OBS • NDI • Streaming</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Profile card">
+          <div class="profile">
+            <div class="avatar-wrap">
+              <img class="avatar" src="assets/img/profile-placeholder.jpg" alt="Your headshot (replace this image)" />
+              <div class="avatar-glow" aria-hidden="true"></div>
+            </div>
+
+            <div class="profile-meta">
+              <h2 class="profile-name">Om Vatish</h2>
+              <p class="profile-role">IT + Creator Portfolio</p>
+
+              <div class="profile-actions">
+                <a class="chip" href="assets/Om-Vatish-Resume.pdf" download>
+                  <span aria-hidden="true">⬇</span> Resume (PDF)
+                </a>
+                <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                  <span aria-hidden="true">↗</span> LinkedIn
+                </a>
+                <a class="chip" href="https://github.com/" target="_blank" rel="noreferrer">
+                  <span aria-hidden="true">↗</span> GitHub
+                </a>
+              </div>
+
+              <p class="profile-note">
+                Tip: Replace images + links. Then push to GitHub Pages.
+              </p>
+            </div>
+          </div>
+
+          <div class="mini-grid" aria-hidden="true">
+            <div class="mini"></div><div class="mini"></div><div class="mini"></div>
+            <div class="mini"></div><div class="mini"></div><div class="mini"></div>
+            <div class="mini"></div><div class="mini"></div><div class="mini"></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ─── SKILLS ──────────────────────────────────────────── -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <p class="section-label center reveal">/ What I Do</p>
-      <h2 class="section-title center reveal">Skills &amp; <em>Expertise</em></h2>
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">🌐</div>
-          <h3>Networking &amp; IT</h3>
-          <p>Routing, switching, TCP/IP, subnetting, network security, and infrastructure design. Currently working toward certifications.</p>
-          <ul class="skill-tags">
-            <li>Cisco IOS</li><li>Wireshark</li><li>Linux</li><li>TCP/IP</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">📷</div>
-          <h3>Photography</h3>
-          <p>Landscape, street, and event photography. Comfortable with both shooting and post-processing to tell visual stories.</p>
-          <ul class="skill-tags">
-            <li>Lightroom</li><li>Photoshop</li><li>Composition</li><li>Editing</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">🎥</div>
-          <h3>Videography</h3>
-          <p>Video production from pre-production through final cut — cinematic shoots, reels, and long-form content.</p>
-          <ul class="skill-tags">
-            <li>Premiere Pro</li><li>After Effects</li><li>DaVinci</li><li>Color Grading</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">🎮</div>
-          <h3>Gaming &amp; Streaming</h3>
-          <p>Content creation around gaming — live streaming, VOD editing, overlays, and building community experiences.</p>
-          <ul class="skill-tags">
-            <li>OBS Studio</li><li>Twitch/YT</li><li>Stream Design</li><li>Clip Editing</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">💻</div>
-          <h3>Development</h3>
-          <p>Web front-end basics, scripting, and automation. Building tools and pages like this one to showcase and solve problems.</p>
-          <ul class="skill-tags">
-            <li>HTML/CSS</li><li>JavaScript</li><li>Python</li><li>Git</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="skill-icon">✍️</div>
-          <h3>Content &amp; Blogging</h3>
-          <p>Writing about tech, gear reviews, tutorials, and my experiences at the crossroads of IT and creative work.</p>
-          <ul class="skill-tags">
-            <li>Tutorials</li><li>Reviews</li><li>Tech Blogs</li><li>Guides</li>
-          </ul>
-        </div>
-
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="gridlines"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── GALLERY ──────────────────────────────────────────── -->
-  <section class="gallery section" id="gallery">
-    <div class="container">
-      <p class="section-label center reveal">/ Visual Work</p>
-      <h2 class="section-title center reveal">Through the <em>Lens</em></h2>
-      <div class="gallery-grid">
-        <!-- Replace these placeholders with your actual images -->
-        <div class="gallery-item tall reveal"><div class="gallery-placeholder"><span>Photo 1</span></div></div>
-        <div class="gallery-item reveal"><div class="gallery-placeholder"><span>Photo 2</span></div></div>
-        <div class="gallery-item reveal"><div class="gallery-placeholder"><span>Photo 3</span></div></div>
-        <div class="gallery-item wide reveal"><div class="gallery-placeholder"><span>Photo 4 — Wide</span></div></div>
-        <div class="gallery-item reveal"><div class="gallery-placeholder"><span>Photo 5</span></div></div>
-        <div class="gallery-item reveal"><div class="gallery-placeholder"><span>Photo 6</span></div></div>
-        <div class="gallery-item reveal"><div class="gallery-placeholder"><span>Photo 7</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── PROJECTS ─────────────────────────────────────────── -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <p class="section-label center reveal">/ My Work</p>
-      <h2 class="section-title center reveal">Featured <em>Projects</em></h2>
-      <div class="projects-list">
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-num">01</span>
-            <span class="project-type">Networking</span>
-          </div>
-          <div class="project-body">
-            <h3>Project Title Here</h3>
-            <p>Brief description of this project. What it does, what you learned, why it matters. Keep it punchy and clear.</p>
-            <div class="project-stack">
-              <span>Cisco Packet Tracer</span>
-              <span>VLANs</span>
-              <span>OSPF</span>
-            </div>
-          </div>
-          <a href="#" class="project-link" aria-label="View project">→</a>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Short, recruiter-friendly. Clean and real.</p>
         </div>
 
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-num">02</span>
-            <span class="project-type">Photography</span>
+        <div class="about-grid">
+          <div class="card reveal">
+            <h3>What I do</h3>
+            <p>
+              I’m a third-year networking student who enjoys solving real problems:
+              troubleshooting, deploying systems, documenting fixes — and then switching
+              gears to create photo/video content and stream setups.
+            </p>
+            <ul class="checklist">
+              <li>Networking fundamentals (routing, VLANs, Wi‑Fi)</li>
+              <li>Linux & Windows troubleshooting</li>
+              <li>Photography & videography (shoot → edit → deliver)</li>
+              <li>Streaming workflows (OBS, NDI, audio, scenes)</li>
+            </ul>
           </div>
-          <div class="project-body">
-            <h3>Photo Series / Album Name</h3>
-            <p>A short series exploring [theme]. Shot over [timeframe] with [camera/lens]. Tell the story behind the shoot.</p>
-            <div class="project-stack">
-              <span>Lightroom</span>
-              <span>Photoshop</span>
-              <span>35mm equiv</span>
+
+          <div class="card reveal">
+            <h3>Skills</h3>
+            <div class="tags">
+              <span class="tag">TCP/IP</span>
+              <span class="tag">Subnetting</span>
+              <span class="tag">Linux</span>
+              <span class="tag">ServiceNow</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">Git/GitHub</span>
+              <span class="tag">OBS</span>
+              <span class="tag">NDI</span>
+              <span class="tag">Premiere / Resolve</span>
+              <span class="tag">Lightroom</span>
+            </div>
+
+            <div class="callout">
+              <p class="muted">
+                You can swap these tags to match your real tools.
+              </p>
             </div>
           </div>
-          <a href="#" class="project-link" aria-label="View project">→</a>
-        </div>
 
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-num">03</span>
-            <span class="project-type">Streaming / Video</span>
-          </div>
-          <div class="project-body">
-            <h3>YouTube / Twitch Channel</h3>
-            <p>Content creation around gaming and tech. Stream overlays, highlight reels, thumbnail design — the full package.</p>
-            <div class="project-stack">
-              <span>OBS</span>
-              <span>Premiere Pro</span>
-              <span>Twitch</span>
+          <div class="card reveal">
+            <h3>Now / Next</h3>
+            <p class="muted">
+              Add 2–3 lines here about what you’re focused on right now (capstone, certs, job search).
+            </p>
+            <div class="timeline">
+              <div class="t-item">
+                <span class="t-dot" aria-hidden="true"></span>
+                <div>
+                  <div class="t-title">Currently</div>
+                  <div class="t-desc">Networking student + building a hybrid IT/creator portfolio.</div>
+                </div>
+              </div>
+              <div class="t-item">
+                <span class="t-dot" aria-hidden="true"></span>
+                <div>
+                  <div class="t-title">Next</div>
+                  <div class="t-desc">Publish 3 blog posts + add 10 best photos + 3 projects.</div>
+                </div>
+              </div>
             </div>
           </div>
-          <a href="#" class="project-link" aria-label="View channel">→</a>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-num">04</span>
-            <span class="project-type">Dev / Web</span>
-          </div>
-          <div class="project-body">
-            <h3>Another Project</h3>
-            <p>Add any other projects here — scripts, automation tools, websites, or anything else you've built or contributed to.</p>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>GitHub</span>
-              <span>HTML/CSS</span>
-            </div>
-          </div>
-          <a href="#" class="project-link" aria-label="View project">→</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── BLOG ─────────────────────────────────────────────── -->
-  <section class="blog section" id="blog">
-    <div class="container">
-      <p class="section-label center reveal">/ Thoughts</p>
-      <h2 class="section-title center reveal">Latest <em>Posts</em></h2>
-      <div class="blog-grid">
-
-        <article class="blog-card reveal">
-          <div class="blog-img-placeholder"><span>Post Image</span></div>
-          <div class="blog-content">
-            <span class="blog-tag">Networking</span>
-            <h3><a href="blog/post-1.html">Blog Post Title Goes Here</a></h3>
-            <p>A short excerpt or intro for this post. Give readers a reason to click and read more...</p>
-            <div class="blog-meta">
-              <span>📅 Jan 2025</span>
-              <span>5 min read</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-img-placeholder"><span>Post Image</span></div>
-          <div class="blog-content">
-            <span class="blog-tag">Photography</span>
-            <h3><a href="blog/post-2.html">Another Blog Post Title</a></h3>
-            <p>A short excerpt or intro for this post. Keep it interesting and make them want to read more...</p>
-            <div class="blog-meta">
-              <span>📅 Feb 2025</span>
-              <span>4 min read</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-img-placeholder"><span>Post Image</span></div>
-          <div class="blog-content">
-            <span class="blog-tag">Gaming</span>
-            <h3><a href="blog/post-3.html">Third Post Title Here</a></h3>
-            <p>Short preview. Could be a gear review, game review, tutorial, or personal experience...</p>
-            <div class="blog-meta">
-              <span>📅 Mar 2025</span>
-              <span>3 min read</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CONTACT ──────────────────────────────────────────── -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="contact-inner reveal">
-        <p class="section-label center">/ Say Hello</p>
-        <h2 class="section-title center">Let's <em>Connect</em></h2>
-        <p class="contact-sub">Whether it's a collab, project, or just a conversation about cameras and packets — my inbox is open.</p>
-        <a href="mailto:your@email.com" class="btn-primary large">your@email.com</a>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.254-.447-1.27.097-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.376.202 2.394.1 2.646.64.699 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.337-.012 2.416-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Twitch">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
-          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ─── FOOTER ───────────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 <strong>Your Name</strong> · Built with intention.</p>
-      <p class="footer-sub">IT Student · Photographer · Gamer</p>
-    </div>
-  </footer>
+    <!-- IT PROJECTS -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>IT Projects</h2>
+          <p>Pick 3–6 strong items. Link to GitHub, docs, or a short case study.</p>
+        </div>
 
-  <script src="js/main.js"></script>
+        <div class="cards-3">
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="badge">Networking</span>
+              <span class="badge ghost">Case Study</span>
+            </div>
+            <h3>Nexus Arena: PC Management</h3>
+            <p class="muted">
+              Session tracking, user check‑ins, and streamlined workflows for a gaming lab.
+              Add results like time saved, error reduction, etc.
+            </p>
+            <div class="project-meta">
+              <span>VLANs • Imaging • SOPs</span>
+              <span>2026</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Read more →</a>
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="badge">Linux</span>
+              <span class="badge ghost">Lab</span>
+            </div>
+            <h3>SSH/SFTP Hardening</h3>
+            <p class="muted">
+              Chroot SFTP setup, key-based auth, custom ports, and verification steps.
+              Great for showing security + Linux comfort.
+            </p>
+            <div class="project-meta">
+              <span>SSH • SFTP • Hardening</span>
+              <span>2026</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Write-up →</a>
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Configs →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project-top">
+              <span class="badge">Automation</span>
+              <span class="badge ghost">Script</span>
+            </div>
+            <h3>Inventory / Audit Script</h3>
+            <p class="muted">
+              Checks installed apps, outputs missing items, and creates a clean report.
+              Perfect for IT support roles.
+            </p>
+            <div class="project-meta">
+              <span>PowerShell • Winget</span>
+              <span>2026</span>
+            </div>
+            <div class="project-links">
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Script →</a>
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Demo →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center mt-24">
+          <a class="btn btn-ghost" href="blog.html#it">More writeups in the blog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2>Photo & Video</h2>
+          <p>Replace these placeholders with your best 9–12 pieces.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="g-item reveal" data-img="assets/img/gallery-1.jpg" data-title="Photo Title 1">
+            <img src="assets/img/gallery-1.jpg" alt="Gallery image 1 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-2.jpg" data-title="Photo Title 2">
+            <img src="assets/img/gallery-2.jpg" alt="Gallery image 2 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-3.jpg" data-title="Photo Title 3">
+            <img src="assets/img/gallery-3.jpg" alt="Gallery image 3 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-4.jpg" data-title="Photo Title 4">
+            <img src="assets/img/gallery-4.jpg" alt="Gallery image 4 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-5.jpg" data-title="Photo Title 5">
+            <img src="assets/img/gallery-5.jpg" alt="Gallery image 5 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-6.jpg" data-title="Photo Title 6">
+            <img src="assets/img/gallery-6.jpg" alt="Gallery image 6 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-7.jpg" data-title="Photo Title 7">
+            <img src="assets/img/gallery-7.jpg" alt="Gallery image 7 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-8.jpg" data-title="Photo Title 8">
+            <img src="assets/img/gallery-8.jpg" alt="Gallery image 8 (replace)" loading="lazy" />
+          </button>
+          <button class="g-item reveal" data-img="assets/img/gallery-9.jpg" data-title="Photo Title 9">
+            <img src="assets/img/gallery-9.jpg" alt="Gallery image 9 (replace)" loading="lazy" />
+          </button>
+        </div>
+
+        <div class="center mt-24">
+          <p class="muted">Optional: add a YouTube/Vimeo showreel below.</p>
+          <div class="video-frame reveal">
+            <div class="video-placeholder">
+              <div class="play" aria-hidden="true"></div>
+              <p>Drop your showreel embed here</p>
+              <small class="muted">YouTube iframe • Vimeo • etc.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STREAMING -->
+    <section class="section alt" id="streaming">
+      <div class="container">
+        <div class="section-head">
+          <h2>Streaming Setup</h2>
+          <p>Keep it simple. Show your setup like a mini “tech stack”.</p>
+        </div>
+
+        <div class="stream-grid">
+          <div class="card reveal">
+            <h3>Core Stack</h3>
+            <ul class="checklist">
+              <li>OBS scenes + transitions</li>
+              <li>Audio: mic chain + filters</li>
+              <li>Capture: console/PC pipeline</li>
+              <li>NDI routing for screens / events</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Gaming</h3>
+            <p class="muted">
+              Add your main games + what kind of content you create (competitive, story, highlights).
+            </p>
+            <div class="tags">
+              <span class="tag">FIFA</span>
+              <span class="tag">Story games</span>
+              <span class="tag">Highlights</span>
+              <span class="tag">Live events</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Clips</h3>
+            <p class="muted">
+              Link your Twitch/YouTube and embed 1–2 clips here later.
+            </p>
+            <div class="project-links">
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">Twitch →</a>
+              <a class="text-link" href="#" target="_blank" rel="noreferrer">YouTube →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Put the links you actually want recruiters to click.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card reveal">
+            <h3>Email</h3>
+            <p class="muted">Replace with your email.</p>
+            <a class="btn btn-ghost" href="mailto:you@example.com">you@example.com</a>
+          </div>
+
+          <div class="card reveal">
+            <h3>Links</h3>
+            <div class="links">
+              <a class="text-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn →</a>
+              <a class="text-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub →</a>
+              <a class="text-link" href="blog.html">Blog →</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Quick note</h3>
+            <p class="muted">
+              Want a custom domain later? Buy one and connect it in GitHub Pages settings.
+            </p>
+            <a class="text-link" href="#top">Back to top ↑</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Om Vatish. Built on GitHub Pages.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <figure>
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
